@@ -1,0 +1,15 @@
+app:
+  name: shuawest-poi-gateway-app
+  namespace: shuawest
+  cluster: .apps.rosa-x4jc7.l07n.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-gh/shuawest-gateway
+  org: rhdh-gh
+  name: shuawest-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: shuawest/poi-gateway-app
+  tag: latest
